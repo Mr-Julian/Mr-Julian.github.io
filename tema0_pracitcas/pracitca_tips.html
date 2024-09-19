@@ -24,8 +24,7 @@
             <summary>
                 <h2>2. Links de llamada SMS y Email</h2>
             </summary>
-            <p>Dentro de los atributos de un enlace podemos referenciar un email,
-                un telefono o un sms dependiendo de lo que queramos.
+            <p>En los atributos de enlace podemos poner un email, un telefono o un mensaje.
             </p>
             <a href="mailto:{email}?subject={subject}&amp;body={content}">
                 Send us an email
@@ -41,52 +40,57 @@
         </details>
     </div>
     <div>
-        <h2>3.Listas ordenadas y su atributo "start"</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>Con el atributo "start" podemos empezar una lista desde el valor que queramos.</p>
+            <summary>
+                <h2>3. Listas ordenadas y su atributo "start"</h2>
+            </summary>
+            <p>El atributo start nos permite inicial una lista desde el valor que le damos.
+            </p>
             <ol start="10">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>PHP</li>
                 <li>Python</li>
+                <li>Go</li>
             </ol>
         </details>
     </div>
     <div>
-        <h2>4.La etiqueta "meter"</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>Puedes utilizar la etiqueta "meter" para marcar cantidades sin necesidad de CSS.</p>
-            <label for="valor1">Bajo</label>
+            <summary>
+                <h2>4. Etiqueta "meter"</h2>
+            </summary>
+            <p>La etiqueta "meter" es utilizada para marcar cantidades sin necesidad de CSS o JavaScript.</p>
+            <label for="valor1">Low</label>
             <meter id="valor1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
-            <label for="valor2">Medio</label>
+            <label for="valor2">Medium</label>
             <meter id="valor2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
-            <label for="valor3">Alto</label>
+            <label for="valor3">High</label>
             <meter id="valor3" min="0" max="100" low="30" high="75" optimum="80" value="85"></meter>
         </details>
     </div>
     <div>
-        <h2>5.HTML Native Search</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>¿Quien da más guerra en clase?</p>
+            <summary>
+                <h2>5.HTML Native Search</h2>
+            </summary>
+
+            <p>El buscador nos permite buscar entre las opciones disponibles</p>
             <input list="items" data-cip-id="cIPJQ342845639">
             <datalist id="items">
-                <option value="Roberto"></option>
-                <option value="Samuel"></option>
-                <option value="Edu"></option>
-                <option value="Rebeca"></option>
-                <option value="Dani"></option>
-                <option value="Diego"></option>
+                <option value="marko denic"></option>
+                <option value="FreeCodeCamps"></option>
+                <option value="FreeCodeTools"></option>
+                <option value="Web Development"></option>
+                <option value="Web Developer"></option>
             </datalist>
         </details>
     </div>
     <div>
-        <h2>6.El elemento Fieldset de formularios</h2>
         <details>
-            <summary>Despliegue para más información</summary>
+            <summary>
+                <h2>6. Elemento Fieldset</h2>
+            </summary>
             <form>
                 <fieldset>
                     <legend>Elige tu lenguaje favorito</legend>
@@ -101,21 +105,22 @@
         </details>
     </div>
     <div>
-        <h2>7."Window.opener"</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>Con el atributo "target = _blank" hacemos que se abra en una nueva pestaña el enlace.</p>
+            <summary>
+                <h2>7. Window.opener</h2>
+            </summary>
             <a href="https://markodenic.com/" target="_blank" rel="noopener">
                 Marko's website
             </a>
         </details>
     </div>
     <div>
-        <h2>8.El elemento Base</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>En la cabecera de este HTML hemos utilizado la etiqueta "base" con el atributo "target=_blank"
-                que hace que todos los enlaces se abran en una pestaña nueva.
+            <summary>
+                <h2>8.Elemento "Base"</h2>
+            </summary>
+            <p>Si queremos que todos los links de la pagina se abrann en una nueva pestaña, utilizamos el elemento
+                "base".
             </p>
             <div>
                 Este enlace se abrirá en una nueva pestaña:<br>
@@ -124,19 +129,23 @@
         </details>
     </div>
     <div>
-        <h2>9.Favicon</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>Para actualizar el icono de tu página web puedes forzar a los buscadores a que tengan la nueva versión
+            <summary>
+                <h2>9.Favicon</h2>
+            </summary>
+            <p>Para actualizar el icono de tu página web puedes forzar a los buscadores a que tengan la nueva
+                versión
                 añadiendo "?v=2" al nombre de nuestro icono.
             </p>
         </details>
     </div>
     <div>
-        <h2>10.El atributo "spellcheck"</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>El atributo "spellcheck" sirve para definir cuando un elemento debe ser corregido por tener errores.</p>
+            <summary>
+                <h2>10. Atributo "spellcheck"</h2>
+            </summary>
+            <p>El atributo "spellcheck" sirve para definir cuando un elemento debe ser revisado para detectar errores
+                ortograficos.</p>
             <label for="input1">Spellcheck activado</label><br>
             <input type="text" id="input1" spellcheck="true" data-cip-id="input1"><br><br>
             <label for="input2">Spellcheck desactivado</label><br>
@@ -144,10 +153,11 @@
         </details>
     </div>
     <div>
-        <h2>11.Native HTML "sliders"</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p></p>
+            <summary>
+                <h2>11.Native HTML "sliders"</h2>
+            </summary>
+            <p>Podemos utilizar "input type="range" para crear controles deslizantes. </p>
             <label for="volumen">Volumen:</label><br>
             <input type="range" id="volumen" name="volumen" min="0" max="10"><br><br>
             <label for="resultado">Tu volumen:</label><br>
@@ -164,11 +174,11 @@
         </details>
     </div>
     <div>
-        <h2>12.HTML Acordeón</h2>
+        <h2>12. HTML Accordion</h2>
         <div>
             <details>
                 <summary>
-                    Pincha aquí para más detalles
+                    Click aquí para ver más detalles
                 </summary>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fugit ad quas odit rerum natus
@@ -181,49 +191,55 @@
         </div>
     </div>
     <div>
-        <h2>13.La etiqueta "mark"</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>La etiqueta "mark" se utiliza para <mark>remarcar</mark> texto.</p>
+            <summary>
+                <h2>13.La etiqueta "mark"</h2>
+            </summary>
+            <p>La etiqueta "mark" es utilizada para <mark>remarcar</mark> texto.</p>
         </details>
     </div>
     <div>
-        <h2>14.El atributo "download"</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>El atributo "download" sirve para descargar directamente un enlace sin tener que navegar a él primero.
+            <summary>
+                <h2>14. Atributo "download"</h2>
+            </summary>
+            <p>El atributo "download" sirve para descargar directamente un enlace sin tener que navegar a él.
             </p>
-            <a href="./images/logoRibera.jpg" download="">Descargar imagen Logo Ribera de Castilla</a>
+            <a href="./images/google.jpg" download="">Descargar imagen Logo google</a>
         </details>
     </div>
     <div>
-        <h2>15.Consejo de rendimiento</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>Utilizar la extensión .webp para el formato de nuestras imagenes las hará estas más pequeñas y aumentará
+            <summary>
+                <h2>15. Video thumbnail</h2>
+            </summary>
+            <p>La extensión .webp cambia el formato de nuestras imagenes, de forma que hará estas más pequeñas y
+                aumentará
                 el rendimiento de nuestra página web.
             </p>
             <picture>
-                <source srcset="./images/logoRibera.webp" type="image/webp">
-                <img src="./images/logoRibera.webp" alt="logo" height="300px" width="300px">
+                <source srcset="./images/google.webp" type="image/webp">
+                <img src="./images/google.jpg" alt="logo" height="300px" width="300px">
             </picture>
         </details>
     </div>
     <div>
-        <h2>16.El atributo "poster" de video</h2>
         <details>
-            <summary>Despliegue para más información</summary>
+            <summary>
+                <h2>16. Atributo "poster" de video</h2>
+            </summary>
             <p>El atributo "poster en las etiquetas de video sirve para mostrar una imagen mientras el video se esta
-                descargando o antes de que se empiece a reproducir."
+                descargando o hasta que el usuario pulse el boton de play."
             </p>
             <pre>                &lt;video poster="path/to/image"&gt;&lt;/video&gt;
                 </pre>
         </details>
     </div>
     <div>
-        <h2>17.El "input" de tipo "search"</h2>
         <details>
-            <summary>Despliegue para más información</summary>
+            <summary>
+                <h2>17.El "input" de tipo "search"</h2>
+            </summary>
             <p>El input de tipo "search" funciona igual que el de tipo "text" a diferencia que contiene un boton para
                 limpiar el campo.
             </p>
@@ -236,10 +252,11 @@
         </details>
     </div>
     <div>
-        <h2>18.La etiqueta "pre"</h2>
         <details>
-            <summary>Despliegue para más información</summary>
-            <p>La etiqueta "pre" sirve para presentar el texto exactamente como esta escrito en HTML.</p>
+            <summary>
+                <h2>18. Etiqueta "pre"</h2>
+            </summary>
+            <p>La etiqueta "pre" sirve para presentar el texto preformateado exactamente como esta escrito en HTML.</p>
             <h3>Con pre:</h3>
             <pre>                .center {
                         display: flex;
@@ -257,11 +274,6 @@
             </p>
         </details>
     </div>
-    <footer>
-
-    </footer>
-
-
 </body>
 
 </html>
