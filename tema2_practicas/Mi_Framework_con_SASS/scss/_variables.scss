@@ -1,0 +1,43 @@
+$primary: #bccfe9;
+$secondary: #FFDB58;
+$tertiary: #FFFFFF;
+$quaternary: #FF7F50;
+$quinary: #808080;
+$danger: #e74c3c;
+$light: #f4f4f4;
+$dark: #2c3e50;
+
+$tamaños: (
+    small: 10px,
+    medium: 20px,
+    big: 30px,
+);
+$tema: (
+    primary: $primary,
+    secondary: $secondary,
+    tertiary: $tertiary,
+    quaternary: $quaternary,
+    quinary: $quinary,
+    danger: $danger,
+    light: $light,
+    dark: $dark
+);
+
+// Tipografía
+$font-family: 'Arial, sans-serif';
+$font-size-base: 16px;
+
+$breakpoints: (
+    "small": 576px,
+    "medium": 768px,
+    "large": 992px,
+);
+
+// Espaciado
+$spacing-unit: 8px;
+
+/* Generamos el codigo css del body */
+body {
+    background-color: $primary;
+    color: $secondary;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Componentes CSS Personalizados</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>My Website</h1>
+            <p>Componentes propios creados con CSS personalizado</p>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="nav-danger">
+            <ul class="ul">
+                <li><a href="#">Botones y alerts</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="inputs.html">Inputs</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
+                <li><a href="carousel.html">Carousel/Slider</a></li>
+                <li><a href="Navs y Footers.html">Navs y Footers</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar" />
+                <span class="material-icons search-icon">search</span>
+            </div>
+        </nav>
+
+        <!-- Sección de Botones -->
+        <h1>Botones</h1>
+        <div class="Seccion">
+            <div class="btn">
+                <button class="btn btn-primary">Botón principal</button>
+                <button class="btn btn-secondary">Botón secundario</button>
+                <button class="btn btn-quinary">Botón terciario</button>
+                <button class="btn btn-danger">Botón de peligro</button>
+            </div>
+            <div class="code">
+                <pre>
+<code>
+&lt;div class= "btn" &gt;
+    &lt;button class="btn btn-primary"&gt;Botón principal&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class= "btn" &gt;
+    &lt;button class="btn btn-secondary"&gt;Botón secundario&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class= "btn" &gt;
+    &lt;button class="btn btn-danger"&gt;Botón de peligro&lt;/button&gt;
+&lt;/div&gt;
+</code>
+                </pre>
+            </div>
+        </div>
+        <!-- Sección de Iconos -->
+        <h1>Iconos</h1>
+        <div class="Seccion">
+            <div>
+                <i class="icon-big-eye"></i>
+                <i class="icon-big-menu"></i>
+                <i class="icon-big-start"></i>
+                <i class="icon-big-stop"></i>
+                <i class="icon-big-close"></i>
+            </div>
+            <div class="code">
+                <pre>
+<code>
+&lt;i class="icon-eye"&gt;&lt;/i&gt;
+&lt;i class="icon-menu"&gt;&lt;/i&gt;
+&lt;i class="icon-start"&gt;&lt;/i&gt;
+&lt;i class="icon-stop"&gt;&lt;/i&gt;
+&lt;i class="icon-close"&gt;&lt;/i&gt;
+</code>
+                </pre>
+            </div>
+        </div>
+        <!-- Botones con Iconos -->
+        <h1>Botones con iconos</h1>
+        <div class="Seccion">
+            <div class="btn">
+                <button class="btn btn-primary">
+                    <i class="icon-eye"></i>
+                </button>
+
+                <button class="btn btn-secondary">
+                    <i class="icon-start"></i>
+                </button>
+
+                <button class="btn btn-quaternary">
+                    <i class="icon-stop"></i>
+                </button>
+
+                <button class="btn btn-danger">
+                    <i class="icon-close"></i>
+                </button>
+            </div>
+            <div class="code">
+                <pre>
+<code>
+&lt;button class="btn"&gt;
+    &lt;i class="icon-eye"&gt;&lt;/i&gt; Botón con ícono
+&lt;/button&gt;
+
+&lt;button class="btn--secondary"&gt;
+    &lt;i class="icon-start"&gt;&lt;/i&gt; Botón con ícono
+&lt;/button&gt;
+
+&lt;button class="btn--tertiary"&gt;
+    &lt;i class="icon-stop"&gt;&lt;/i&gt; Botón con ícono
+&lt;/button&gt;
+
+&lt;button class="btn--danger"&gt;
+    &lt;i class="icon-close"&gt;&lt;/i&gt; Botón con ícono
+&lt;/button&gt;
+</code>
+                </pre>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2020 My Website</p>
+        </footer>
+    </div>
+</body>

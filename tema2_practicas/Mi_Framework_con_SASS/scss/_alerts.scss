@@ -1,0 +1,19 @@
+.alert {
+    // Aplicamos el mixin de estilo base
+    @include alert-base;
+
+    @each $name, $color in $tema {
+        .alert-#{$name} {
+            background-color: $color;
+        }
+    }
+
+    // Botón de cierre para las alertas
+    .alert-close {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
