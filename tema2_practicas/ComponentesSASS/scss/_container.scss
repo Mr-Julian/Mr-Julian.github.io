@@ -1,0 +1,42 @@
+/*Definimos el conatiner */
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    background-color: #f0f0f0;
+
+    @media (max-width: 1200px) {
+        width: 90%;
+    }
+
+    @media (max-width: 768px) {
+        width: 95%;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+.Seccion {
+    @include flex-container(space-between, center, row);
+}
+
+.seccion2 {
+    @include flex-container(space-between, center, column);
+    margin-top: 20px;
+    width: 70%;
+}
+
+.seccion3 {
+    @include flex-container(space-between, center, column);
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 30px;
+    padding-left: 20px;
+}

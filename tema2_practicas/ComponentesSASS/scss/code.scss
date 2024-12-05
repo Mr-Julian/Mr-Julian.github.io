@@ -1,0 +1,23 @@
+$quinary: #808080;
+
+.code {
+    background-color: $quinary; // Color de fondo
+    width: 35%; // Ancho de la caja
+    margin-right: 20px; // Espaciado a la derecha
+    overflow: scroll; // Hacemos que el contenido sea scrollable
+
+    @media (max-width: 1200px) {
+        width: 45%;
+        margin-right: 15px;
+    }
+
+    @media (max-width: 768px) {
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        margin-right: 0;
+    }
+}

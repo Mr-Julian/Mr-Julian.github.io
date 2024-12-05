@@ -1,0 +1,29 @@
+/*definimos los iconos */
+$icons: (
+    "eye": "\e8f4",
+    "start": "\e089",
+    "stop": "\e047",
+    "close": "\e5cd",
+    "menu": "\e5d2",
+
+);
+
+@each $name, $glyph in $icons {
+    .icon-#{$name}:before {
+        display: inline-block;
+        font-family: "Material Icons";
+        content: $glyph;
+        font-size: 24px;
+        margin-right: 8px;
+    }
+}
+
+@each $name, $glyph in $icons {
+    .icon-big-#{$name}:before {
+        display: inline-block;
+        font-family: "Material Icons";
+        content: $glyph;
+        font-size: 48px;
+        margin-right: 8px;
+    }
+}

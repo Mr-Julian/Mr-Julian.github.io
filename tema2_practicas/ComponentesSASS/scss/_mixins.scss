@@ -1,0 +1,131 @@
+// Mixin para los estilos comunes de los contenedores flexibles
+@mixin flex-container($justify: flex-start, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    padding-left: 20px;
+}
+
+// Mixin para los estilos comunes de los headers
+@mixin header-base($padding-top: 20px, $padding-bottom: 20px, $width: 100%, $margin: 0 auto) {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    text-align: center;
+    background: rgb(90, 79, 79);
+    width: $width;
+    margin: $margin;
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+// Mixin para los estilos comunes de los botones
+@mixin btn-base($padding: 10px 20px, $font-size: 16px) {
+    color: white;
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding: $padding;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: $font-size;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+// Mixin para los estilos comunes de las alertas
+@mixin alert-base($padding: 15px, $font-size: 16px, $border-radius: 4px) {
+    color: white;
+    padding: $padding;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    margin-bottom: 10px; // Espaciado entre alertas
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-span: all;
+}
+
+// Mixin para los estilos comunes de las tarjetas
+@mixin card-base($border-radius: $spacing-unit, $padding: $spacing-unit * 0, $shadow: 0 4px 6px rgba(0, 0, 0, 0.1)) {
+    border: 1px solid $light;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    overflow: hidden;
+    background-color: $light;
+    margin-bottom: 20px;
+    width: 300px;
+    padding: $padding;
+}
+
+// Mixin para los estilos comunes de los inputs
+@mixin input-style($background-color: $light, $border-color: #ccc, $padding: $spacing-unit, $border-radius: $border-radius) {
+    padding: $padding;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    background-color: $background-color;
+    font-size: 16px;
+}
+
+// Mixin para los estilos comunes de la navegación
+@mixin nav-styles($padding: 20px) {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding;
+    margin: 10px;
+
+    a {
+        text-decoration: none;
+        display: block;
+        padding: $padding;
+        color: white;
+    }
+
+    a:hover {
+        background-color: rgb(140, 82, 233);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 10px;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    // Agregamos estilos para el input de búsqueda
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: secondary;
+
+        input[type="text"] {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 200px;
+        }
+
+        input[type="text"]::placeholder {
+            color: #999;
+        }
+
+        .search-icon {
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

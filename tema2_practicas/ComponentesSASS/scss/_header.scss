@@ -1,0 +1,13 @@
+.header {
+    @include header-base;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    @each $name, $color in $tema {
+        &.header-#{$name} {
+            background-color: $color !important;
+        }
+    }
+}
