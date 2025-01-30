@@ -1,0 +1,289 @@
+.header {
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.video {
+    width: 600px;
+    height: 400px;
+
+}
+
+.header-titulo {
+    margin-left: 30%;
+}
+
+.header-logo {
+    margin-left: 10px;
+}
+
+.uvas {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgba(235, 177, 69, 0.897);
+    align-items: center;
+    margin: 0 auto;
+}
+
+.imagen-card {
+    width: 600px;
+    height: 400px;
+}
+
+.imagen-card:hover {
+    transform: rotate(360deg) scale(1.5);
+    transition-duration: 4s;
+}
+
+.titulos {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0%;
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes copa_cuadrado {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes nota_mover {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        left: 400px;
+        top: 300px;
+    }
+
+    75% {
+        left: 600px;
+        top: 500px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes nota2_mover {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        left: 400px;
+        top: 300px;
+    }
+
+    75% {
+        left: 600px;
+        top: 500px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes copa2_mover {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: -200px;
+        top: 0px;
+    }
+
+    50% {
+        left: -400px;
+        top: -300px;
+    }
+
+    75% {
+        left: -600px;
+        top: -500px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-content: end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.boton-rotar {
+    background-color: black;
+    color: white;
+}
+
+.boton-zoom {
+    background-color: black;
+    color: white;
+
+}
+
+.parallax {
+
+    background-image: url("../images/wine-house-2110737_1280.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    margin-top: 20px;
+}
+
+
+.parallax2 {
+
+    background-image: url("../images/wines-1761613_1280.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    background-color: rgba(235, 177, 69, 0.897);
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.card-body {
+    background-color: seashell;
+}
+
+.imagen-copa {
+    animation-name: copa_cuadrado, rotar;
+    animation-duration: 4s;
+    position: relative;
+    width: 75px;
+    height: 80px;
+    animation-iteration-count: infinite;
+}
+
+.imagen-copa2 {
+    animation-name: copa2_mover, rotar;
+    animation-duration: 4s;
+    position: relative;
+    width: 75px;
+    height: 80px;
+    animation-iteration-count: infinite;
+}
+
+.imagen-nota {
+    animation-name: nota_mover;
+    animation-duration: 4s;
+    position: relative;
+    width: 75px;
+    height: 80px;
+    animation-iteration-count: infinite;
+}
+
+.imagen-nota2 {
+    animation-name: nota2_mover;
+    animation-duration: 4s;
+    position: relative;
+    width: 75px;
+    height: 80px;
+    animation-iteration-count: infinite;
+}
+
+
+.footer {
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+}
+
+.footer-columna {
+    width: 20%;
+    ;
+}
